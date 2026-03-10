@@ -1,4 +1,65 @@
-td, th {
+.bold {
+  font-weight: 750;
+}
+
+/*Credit to Web Tech Knowledge on YouTube for helping me implement the next three rules.*/
+.zoom img {
+  cursor: zoom-in;
+  transition: transform 0.5s ease;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+body {
+  font-family: "Oxanium", sans-serif;
+  color: white;
+  background-image: url(../images/stars.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 0.8em;
+}
+
+h1 {
+  font-size: 2.75em;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  text-shadow: rgba(255,255,255,0.6) 0px 0px 8px; /*Credit to CSS Bud for helping me implement this glowing effect*/
+}
+
+td {
+  font-weight: 550;
+}
+
+img {
+  max-height: 190px; /*Forcing a maximum height*/
+  margin-top: 0.4em;
+}
+
+td, th { /*Giving these elements some breathing room*/
 	border: 1px solid;
-  }
-  
+  padding: 0.2em 0;
+}
+
+h1, td {
+  text-align: center;
+}
+
+#planets * { /*Making sure the table shrinks nicely with the window*/
+  max-width: 90%;
+  height: auto;
+}
+
+#planets {
+  margin: 0 auto;
+  width: 85%;
+  height: auto;
+  background-color: black;
+}
