@@ -4,68 +4,90 @@
   <meta charset="utf-8">
   <title>Nickole's Planet Table</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>Planetary Fact Sheet</h1>
   <table id="planets">
     <tr>
       <th></th>
-      <th>Venus</th>
-      <th>Earth</th>
-      <th>Saturn</th>
-      <th>Neptune</th>
+      <th>Venus &lpar;&#9792;&rpar;</th>
+      <th>Earth &lpar;&#9793;&rpar;</th>
+      <th>Saturn &lpar;&#9796;&rpar;</th>
+      <th>Neptune &lpar;&#9798;&rpar;</th>
     </tr>
     <tr>
-      <td>Images of Planets</td>
-      <td><img src="images/venus.png" alt="?"></td>
-      <td><img src="images/earth.png" alt="?"></td>
-      <td><img src="images/saturn.png" alt="?"></td>
-      <td><img src="images/neptune.png" alt="?"></td>
+      <td class="bold">Images of Planets</td>
+      <td><img src="images/venus.png" alt="An up-close, yellow-ish shot of Venus in outer space."></td>
+      <td><img src="images/earth.png" alt="A blue, green, and beige Earth, as seen from from outer space."></td>
+      <td><img src="images/saturn.png" alt="A true depiction of a gray-ish beige Saturn in outer space."></td>
+      <td><img src="images/neptune.png" alt="An up-close shot of a cold, royal blue Neptune."></td>
     </tr>
     <tr>
-      <td>Mass &lpar;10<sup>24</sup>kg&rpar;</td>
+      <td class="bold">Location in Solar System</td>
+      <td class="zoom">
+        <input type="checkbox" name="" id="venus-zoom">
+        <label for="venus-zoom"><img src="images/venus-location.png" alt="Venus's location on a solar system diagram."></label>
+      </td>
+      <td class="zoom">
+        <input type="checkbox" name="" id="earth-zoom">
+        <label for="earth-zoom"><img src="images/earth-location.png" alt="Earth's location on a solar system diagram."></label>
+      </td>
+      <td class="zoom">
+        <input type="checkbox" name="" id="saturn-zoom">
+        <label for="saturn-zoom"><img src="images/saturn-location.png" alt="Saturn's location on a solar system diagram."></label>
+      </td>
+      <td class="zoom">
+        <input type="checkbox" name="" id="neptune-zoom">
+        <label for="neptune-zoom"><img src="images/neptune-location.png" alt="Neptune's location on a solar system diagram."></label>
+      </td>
+    </tr>
+    <tr>
+      <td class="bold">Mass &lpar;10<sup>24</sup>kg&rpar;</td>
       <td>4.87</td>
       <td>5.97</td>
       <td>568</td>
       <td>102</td>
     </tr>
     <tr>
-      <td>Gravity &lpar;m/s<sup>2</sup>&rpar;</td>
+      <td class="bold">Gravity &lpar;m/s<sup>2</sup>&rpar;</td>
       <td>8.9</td>
       <td>9.8</td>
       <td>9.0</td>
       <td>11.0</td>
     </tr>
     <tr>
-      <td>Rotation Period &lpar;hours&rpar;</td>
+      <td class="bold">Rotation Period &lpar;hours&rpar;</td>
       <td>-5832.5</td>
       <td>23.9</td>
       <td>10.7</td>
       <td>16.1`</td>
     </tr>
     <tr>
-      <td>Length of Day &lpar;hours&rpar;</td>
+      <td class="bold">Length of Day &lpar;hours&rpar;</td>
       <td>2802.0</td>
       <td>24.0</td>
       <td>10.7</td>
       <td>16.1</td>
     </tr>
     <tr>
-      <td>Orbital Period &lpar;days&rpar;</td>
+      <td class="bold">Orbital Period &lpar;days&rpar;</td>
       <td>224.7</td>
       <td>365.2</td>
       <td>10,747</td>
       <td>59,800</td>
     </tr>
     <tr>
-      <td>Mean Temperature &lpar;C&rpar;</td>
+      <td class="bold">Mean Temperature &lpar;C&rpar;</td>
       <td>464</td>
       <td>15</td>
       <td>-140</td>
       <td>-200</td>
     </tr>
     <tr>
-      <td>Number of Moons</td>
+      <td class="bold">Number of Moons</td>
       <td>0</td>
       <td>1</td>
       <td>83</td>
@@ -73,4 +95,8 @@
     </tr>
     <tr>
   </table>
+  
+  <!--<div id="you-are-here">
+    
+  </div>-->
 </body>
